@@ -21,7 +21,7 @@ import piva.data_viewer_3d as p3d
 import piva.data_viewer_4d as p4d
 import piva.plot_tool as pt
 from typing import Union
-
+import pearl.data_loaders as dlp
 
 START_TIME = time.time()
 testing = True
@@ -29,6 +29,7 @@ all_dls = {
     "Pickle": dl.DataloaderPickle,
     "SLS - SIS": dl.DataloaderSIS,
     "SLS - ADRESS": dl.DataloaderADRESS,
+    "SLS - PEARL": dlp.DataloaderPEARL,
     "MAX IV - Bloch": dl.DataloaderBloch,
     "ALS - MERLIN (4.0.3)": dl.DataloaderMERLIN,
     "ALS - HERS (10.0.1)": dl.DataloaderHERS,
