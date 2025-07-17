@@ -21,7 +21,7 @@ import piva.data_viewer_3d as p3d
 import piva.data_viewer_4d as p4d
 import piva.plot_tool as pt
 from typing import Union
-import pearl.data_loaders as dlp
+import piva.pearl.data_loaders as dlp
 
 START_TIME = time.time()
 testing = True
